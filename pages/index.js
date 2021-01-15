@@ -30,7 +30,7 @@ const Home = () => {
           property="og:description" 
           content="I'm Josh Berube, a web developer based in Lehi, Utah. I create beautiful, optimized, and clean websites."
         />
-        <meta property="og:image" content="https://joshberube.com/profileOGImage.jpg" />
+        <meta property="og:image" content="https://joshberube.com/portfolioOGImage.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/jpeg" />
