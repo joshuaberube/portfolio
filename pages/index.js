@@ -20,6 +20,7 @@ const Home = () => {
         />
         <meta name="keywords" content="Josh Berube, Josh, Berube, Josh Berube Portfolio, Portfolio, Web Developer, Josh Berube Web Developer" />
         <meta name="author" content="Josh Berube" />
+        <meta name="google-site-verification" content="1jWWIwQ5oQ9y1cf6Pu717uZGQ7rPKFeaRs9mBZpaBpU" />
 
         <meta property="og:site_name" content="Josh Berube" />
         <meta property="og:url" content="https://joshberube.com" />
