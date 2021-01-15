@@ -1,16 +1,46 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Thin"), url("/fonts/Proxima Nova Thin.otf") format('opentype');
+  font-weight: 100;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Light"), url("/fonts/Proxima Nova Light.otf") format('opentype');
+  font-weight: 300;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Regular"), url("/fonts/Proxima Nova Regular.otf") format('opentype');
+  font-weight: 400;
 }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Semibold"), url("/fonts/Proxima Nova Semibold.otf") format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Bold"), url("/fonts/Proxima Nova Bold.otf") format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova ExtraBold"), url("/fonts/Proxima Nova Extrabold.otf") format('opentype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Black"), url("/fonts/Proxima Nova Black.otf") format('opentype');
+  font-weight: 900;
+}
+
+@tailwind utilities;
