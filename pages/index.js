@@ -39,7 +39,7 @@ const Home = () => {
       </Head>
 
       <main className="font-proxima-nova h-screen w-screen flex justify-center items-center" >
-        <h1 className="text-black text-9xl font-extrabold dark:text-white">Josh Berube</h1>
+        <h1 className="text-black text-7xl text-center lg:text-9xl font-extrabold dark:text-white">Josh Berube</h1>
       </main>
     </div>
   )
