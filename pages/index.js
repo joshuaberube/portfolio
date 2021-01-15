@@ -37,8 +37,8 @@ const Home = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <main>
-        <h1>Josh Berube</h1>
+      <main className="font-proxima-nova h-screen w-screen flex justify-center items-center bg-white dark:bg-black">
+        <h1 className="text-black text-9xl font-extrabold dark:text-white">Josh Berube</h1>
       </main>
     </div>
   )
