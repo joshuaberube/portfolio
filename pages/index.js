@@ -36,9 +36,10 @@ const Home = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <style>{'body { background-color: black } '}</style>
       </Head>
 
-      <main className="font-proxima-nova h-screen w-screen flex justify-center items-center bg-white dark:bg-black">
+      <main className="font-proxima-nova h-screen w-screen flex justify-center items-center bg-white dark:bg-black" >
         <h1 className="text-black text-9xl font-extrabold dark:text-white">Josh Berube</h1>
       </main>
     </div>
