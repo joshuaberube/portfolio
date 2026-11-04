@@ -1,58 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: local('proxima-nova-regular'), url('/fonts/proxima-nova/regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: local('proxima-nova-bold'), url('/fonts/proxima-nova/bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'proxima-nova', Arial, sans-serif;
+  --font-display: 'proxima-nova', Arial, sans-serif;
+}
 
 @layer base {
-  @font-face {
-    font-family: 'proxima-nova';
-    src: local('proxima-nova-thin'), url('/fonts/proxima-nova/thin.otf') format('opentype');
-    font-weight: 100;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'proxima-nova';
-    src: local('proxima-nova-light'), url('/fonts/proxima-nova/light.otf') format('opentype');
-    font-weight: 300;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'proxima-nova';
-    src: local('proxima-nova-regular'), url('/fonts/proxima-nova/regular.otf') format('opentype');
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'proxima-nova';
-    src: local('proxima-nova-semibold'), url('/fonts/proxima-nova/semibold.otf') format('opentype');
-    font-weight: 600;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'proxima-nova';
-    src: local('proxima-nova-bold'), url('/fonts/proxima-nova/bold.otf') format('opentype');
-    font-weight: 700;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'proxima-nova';
-    src: local('proxima-nova-extraBold'), url('/fonts/proxima-nova/extrabold.otf') format('opentype');
-    font-weight: 800;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'proxima-nova';
-    src: local('proxima-nova-black'), url('/fonts/proxima-nova/black.otf') format('opentype');
-    font-weight: 900;
-    font-display: swap;
-  }
-
   html {
+    font-family: var(--font-sans);
     @apply antialiased;
   }
+}
+
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+@utility animation-delay-none {
+	animation-delay: 0s;
+}
+
+@utility animation-delay-* {
+	animation-delay: --value([time]);
+	animation-delay: calc(--value(integer) * 1ms);
 }
