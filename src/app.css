@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'proxima-nova';
+    src: local('proxima-nova-thin'), url('/fonts/proxima-nova/thin.otf') format('opentype');
+    font-weight: 100;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: local('proxima-nova-light'), url('/fonts/proxima-nova/light.otf') format('opentype');
+    font-weight: 300;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: local('proxima-nova-regular'), url('/fonts/proxima-nova/regular.otf') format('opentype');
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: local('proxima-nova-semibold'), url('/fonts/proxima-nova/semibold.otf') format('opentype');
+    font-weight: 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: local('proxima-nova-bold'), url('/fonts/proxima-nova/bold.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: local('proxima-nova-extraBold'), url('/fonts/proxima-nova/extrabold.otf') format('opentype');
+    font-weight: 800;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: local('proxima-nova-black'), url('/fonts/proxima-nova/black.otf') format('opentype');
+    font-weight: 900;
+    font-display: swap;
+  }
+
+  html {
+    @apply antialiased;
+  }
+}

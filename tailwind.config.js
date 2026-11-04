@@ -1,15 +1,30 @@
-module.exports = {
-  purge: ['./pages/**/*.js', './components/**/*.js'],
-  darkMode: 'media',
+import plugin from 'tailwindcss/plugin';
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
-      fontFamily: {
-        'proxima-nova': ["Proxima Nova"]
+      container: {
+        center: true,
+        padding: '20px',
       },
+      fontFamily: {
+        'sans': ['proxima-nova', 'Arial', 'sans-serif']
+      }
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: [
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          'animation-delay': value => ({'animation-delay': value})
+        },
+        {
+          values: theme('transitionDelay')
+        }
+      )
+    })
+  ],
 }
+
