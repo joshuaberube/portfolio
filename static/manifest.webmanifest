@@ -1,0 +1,15 @@
+{
+  "name": "Pop Pops",
+  "short_name": "Pop Pops",
+  "scope": "/games/pop-pops",
+  "start_url": "/games/pop-pops",
+  "display": "standalone",
+  "background_color": "#74c9ff",
+  "theme_color": "#74c9ff",
+  "icons": [
+    {
+      "src": "/favicon-pop-pops.png",
+      "type": "image/png"
+    }
+  ]
+}
