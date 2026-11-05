@@ -1,6 +1,6 @@
 {
 	"name": "portfolio",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -28,5 +28,9 @@
 		"typescript": "^6.0.3",
 		"vite": "^8.3.5"
 	},
-	"type": "module"
+	"type": "module",
+	"imports": {
+		"#lib": "./src/lib/index.js",
+		"#lib/*": "./src/lib/*"
+	}
 }
